@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Estudiantes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Gestión de Estudiantes</h1>
+      <a href="/buscar/buscar.html" class="btn btn-secondary">Ir a Buscar</a>
+    </header>
+
+ 
+    <section>
+      <button id="add-student-btn" class="btn btn-primary">Agregar Estudiante</button>
+    </section>
+
+    <!-- Tabla para mostrar los estudiantes -->
+    <section>
+      <table id="student-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Grado</th>
+            <th>Promedio</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table>
+    </section>
+
+   
+    <section id="student-form-container" style="display: none;">
+      <form id="student-form">
+        <h2>Agregar/Actualizar Estudiante</h2>
+        <input type="hidden" id="student-id" />
+        <div class="form-group">
+          <label for="student-name">Nombre</label>
+          <input type="text" id="student-name" placeholder="Nombre" required />
+        </div>
+        <div class="form-group">
+          <label for="student-age">Edad</label>
+          <input type="number" id="student-age" placeholder="Edad" required />
+        </div>
+        <div class="form-group">
+          <label for="student-grade">Grado</label>
+          <input type="text" id="student-grade" placeholder="Grado" required />
+        </div>
+        <div class="form-group">
+          <label for="student-average">Promedio</label>
+          <input type="number" id="student-average" placeholder="Promedio" step="0.01" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        <button type="button" id="cancel-btn" class="btn btn-secondary">Cancelar</button>
+      </form>
+    </section>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

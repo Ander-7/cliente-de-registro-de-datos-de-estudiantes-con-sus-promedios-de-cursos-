@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscar Estudiantes</title>
+  <link rel="stylesheet" href="/buscar/buscar.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Búsqueda de Estudiantes</h1>
+    </header>
+
+    
+    <section>
+      <form id="search-form">
+        <h2>Buscar Estudiante</h2>
+        <div class="form-group">
+          <label for="search-query">Buscar por ID o Nombre</label>
+          <input type="text" id="search-query" placeholder="Ingrese ID o Nombre del estudiante" />
+        </div>
+        <button type="submit" class="btn btn-primary">Buscar</button>
+      </form>
+    </section>
+
+ 
+    <section>
+      <table id="results-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Grado</th>
+            <th>Promedio</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <script src="/buscar/buscar.js"></script>
+</body>
+</html>
